@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculadora de Notas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Nota de Frequência</h1>
+
+    <label for="t1">Nota do Teste 1:</label>
+    <input type="number" id="t1" min="0" max="20" />
+
+    <label for="t2">Nota do Teste 2 (opcional):</label>
+    <input type="number" id="t2" min="0" max="20" />
+
+    <label for="tr1">Nota do Trabalho 1:</label>
+    <input type="number" id="tr1" min="0" max="20" />
+
+    <label for="numTrabalhos">Número de Trabalhos:</label>
+    <select id="numTrabalhos">
+      <option value="1">1 Trabalho</option>
+      <option value="2">2 Trabalhos</option>
+    </select>
+
+    <label for="tr2" id="labelTr2">Nota do Trabalho 2:</label>
+    <input type="number" id="tr2" min="0" max="20" />
+
+    <button id="calcularBtn">Calcular Nota Final</button>
+
+    <div id="resultado"></div>
+    <div id="status"></div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

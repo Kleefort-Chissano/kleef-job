@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #374151;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #e0e7ff;
+    color: #1e3a8a;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.status.dispensado {
+    color: green;
+}
+
+.status.excluido {
+    color: red;
+}
+
+.status.admitido {
+    color: orange;
+}
